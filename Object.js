@@ -456,3 +456,10 @@
 // console.log(FirstName);//alok
 // console.log(gender);//gay
 // console.log(val);//{ userId: 2, FirstName: 'parteek', gender: 'male' }
+
+
+
+// -------------------------------------------
+//          01/10/2023
+//           --end---
+//--------------------------------------------
