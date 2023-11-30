@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body> 
+    <ul>
+        <li> First Element</li>
+        <li> Second Element</li>
+        <li> Third Element</li>
+    </ul>
+
+
+    <table>
+        <tr>
+            <td>First Element</td>
+            <td>second Element</td>
+        </tr>
+        <tr
+            <td>third Element</td>
+            <td>fourth Element</td>
+        </tr>
+        <tr
+            <td>5th Element</td>
+            <td>6th Element</td>
+        </tr>
+    </table>
+    <!-- DOM  -->
+    <script>
+           // to find root node 
+                // console.log(document.documentElement);
+                // console.log(document.body);
+                // console.log(document.head);
+
+
+            // to access the Childrens node 
+                // console.log(document.body.childNodes );
+
+           // TO select child node 
+        //    console.log(document.body.firstChild);
+        //    console.log(document.body.lastChild);
+        //    console.log(document.firstElementChild);
+        //    console.log(document.lastElementChild);
+
+
+           // the output will not be in the form of arrray , it is in form of object 
+           // it is looking as a array but it is not an array so 
+           // if we want to use some array method on it we have to use 
+        //    first convert it inton array form 
+
+
+        //----------------------------
+         // to converet it into array 
+         //----------------------------
+
+   // const ChildrensOfBody = Array.from(here we can pass the object referance )
+
+//    const ChildrensOfBody = Array.from(document.body.children)
+//    console.log(ChildrensOfBody);// it is in the array form 
+
+// //----------------------------------------------------------------------------------------
+// // how we will see siblings 
+// // we have two properties  1) next and 2) previous
+// //----------------------------------------------
+// console.log(document.body.children[0]);
+
+//  const ulTag = document.body.children[0];
+//  const firstLi = ulTag.children[0];// here in firstLi variable can be store the 0th index means first child element of ulTag
+//  const secondLi = ulTag.children[1];
+//  // for previous sibling 
+//  console.log(secondLi.previousSibling.textContent);
+
+
+// now we will go for dom in table 
+// let we have a example of table 
+//----------------------------------------
+// <table>
+//         <tr>
+//             <td>First Element</td>
+//             <td>second Element</td>
+//         </tr>
+//         <tr
+//             <td>third Element</td>
+//             <td>fourth Element</td>
+//         </tr>
+//         <tr
+//             <td>5th Element</td>
+//             <td>6th Element</td>
+//         </tr>
+//     </table>
+//--------------------------------------------
+
+// we know that all info about table will be store in -> tBodies
+
+const tableTag = document.body.children[1];
+//here we are selecting body and 
+// selecting the 2nd child of the dom or we can say that 2nd Node 
+// bcz first node Come in <ul> </ul>
+// and the second will come in table 
+// that why i am selecting this node 
+
+// when we select the 2nd child
+// and i want to access the ROW of the table
+// we have a tag name --> tBodies -> which contain all the thing which is present inside the table 
+
+
+// so if we want to access the first row or if we want to select the first row of the table 
+// we have to write like this--> 
+console.log(tableTag.tBodies[0].rows);
+// now every row having some cell
+
+// to access the cells we can write like 
+console.log(tableTag.tBodies[0].rows[0].cells[1]);//td
+
+// so we can modify the color for example
+
+console.log(tableTag.tBodies[0].rows[0].cells[1].style = "background-color:red;");
+
+    </script>
+</body>
+</html>
