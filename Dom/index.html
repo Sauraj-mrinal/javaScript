@@ -6,6 +6,7 @@
     <title>DOM</title>
 </head>
 <body> 
+
     <ul>
         <li> First Element</li>
         <li> Second Element</li>
@@ -27,6 +28,19 @@
             <td>6th Element</td>
         </tr>
     </table>
+
+    <ul id="element">  
+        <li class="list-item">First element</li>
+        <li class="list-item" >Second list-item</li>
+        <li class="list-item">Third list item</li>
+    </ul>
+   <div class="allDivs"> First Div</div>
+   <script>
+       const allDiv = document.getElementsByClassName('allDivs');
+       console.log(allDiv);
+   </script>
+   <div class="allDivs"> Second Div</div>
+
     <!-- DOM  -->
     <script>
            // to find root node 
@@ -118,6 +132,51 @@ console.log(tableTag.tBodies[0].rows[0].cells[1]);//td
 
 console.log(tableTag.tBodies[0].rows[0].cells[1].style = "background-color:red;");
 
+
+     //---------------------------------------------------------------------------
+     //                 class with dom 
+     //---------------------------------------------------------------------------
+//  <ul id="element">  
+//     <li class="list-item">First element</li>
+//     <li class="list-item" >Second list-item</li>
+//     <li class="list-item">Third list item</li>
+//  </ul>
+
+
+//-------------------------------------------------------------------------------
+const l = document.getElementsByClassName("list-item");
+
+console.log(l);// here we select all the three elements
+
+
+//---------------------------------------------------------------------------
+     //               TagnAME with dom 
+     //---------------------------------------------------------------------------
+ let val = document.getElementsByTagName("table");
+ console.log(val);
+
+
+//---------------------------------------------------------------------------
+     //               quer Selector 
+     //---------------------------------------------------------------------------
+ // basically in this selector we use the name of CSS selector
+ // for example in case of css we was using the class name by dot 
+
+ const listItem  = document.querySelectorAll('.list-item');
+ console.log(listItem);
+ // it will give me a NodeList (3)
+ console.log(listItem[0].textContent);// firstElement
+
+
+ // what is the diff b/w querySelector and getElementBy
+//  ----> so quer IS static
+// ----->but getElementBy can change during runtime 
+
+
+//getElementBy --> will be pass the referance AND it is live 
+//it will not be pass the particular data 
+// while in case of querySelector It take the data only ont its referance 
+// if i cange something then it will not be reflected
     </script>
 </body>
 </html>

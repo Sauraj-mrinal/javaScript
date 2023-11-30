@@ -56,12 +56,14 @@
     <script>
         // Write the code to paint all the row in diffrent colors.
      let selectTable = document.body.children[0];
-   
+   // we are selecting children[0]->bcz we have only one child 
           console.log(selectTable);
 
 
         
 
+          // to select 0th row we have a method -> rows[]
+          // to select 0th column we have a method -> cells[]
         selectTable.rows[0].cells[0].style = "background-color: #618a04;"
         selectTable.rows[0].cells[1].style = "background-color: #a43557;"
         selectTable.rows[0].cells[2].style = "background-color: #f0f1f8;"
