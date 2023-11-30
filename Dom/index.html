@@ -108,7 +108,7 @@
 
 // we know that all info about table will be store in -> tBodies
 
-const tableTag = document.body.children[1];
+// const tableTag = document.body.children[1];
 //here we are selecting body and 
 // selecting the 2nd child of the dom or we can say that 2nd Node 
 // bcz first node Come in <ul> </ul>
@@ -122,15 +122,15 @@ const tableTag = document.body.children[1];
 
 // so if we want to access the first row or if we want to select the first row of the table 
 // we have to write like this--> 
-console.log(tableTag.tBodies[0].rows);
-// now every row having some cell
+// console.log(tableTag.tBodies[0].rows);
+// // now every row having some cell
 
-// to access the cells we can write like 
-console.log(tableTag.tBodies[0].rows[0].cells[1]);//td
+// // to access the cells we can write like 
+// console.log(tableTag.tBodies[0].rows[0].cells[1]);//td
 
-// so we can modify the color for example
+// // so we can modify the color for example
 
-console.log(tableTag.tBodies[0].rows[0].cells[1].style = "background-color:red;");
+// console.log(tableTag.tBodies[0].rows[0].cells[1].style = "background-color:red;");
 
 
      //---------------------------------------------------------------------------
@@ -143,17 +143,17 @@ console.log(tableTag.tBodies[0].rows[0].cells[1].style = "background-color:red;"
 //  </ul>
 
 
-//-------------------------------------------------------------------------------
-const l = document.getElementsByClassName("list-item");
+// //-------------------------------------------------------------------------------
+// const l = document.getElementsByClassName("list-item");
 
-console.log(l);// here we select all the three elements
+// console.log(l);// here we select all the three elements
 
 
-//---------------------------------------------------------------------------
-     //               TagnAME with dom 
-     //---------------------------------------------------------------------------
- let val = document.getElementsByTagName("table");
- console.log(val);
+// //---------------------------------------------------------------------------
+//      //               TagnAME with dom 
+//      //---------------------------------------------------------------------------
+//  let val = document.getElementsByTagName("table");
+//  console.log(val);
 
 
 //---------------------------------------------------------------------------
@@ -162,10 +162,10 @@ console.log(l);// here we select all the three elements
  // basically in this selector we use the name of CSS selector
  // for example in case of css we was using the class name by dot 
 
- const listItem  = document.querySelectorAll('.list-item');
- console.log(listItem);
- // it will give me a NodeList (3)
- console.log(listItem[0].textContent);// firstElement
+//  const listItem  = document.querySelectorAll('.list-item');
+//  console.log(listItem);
+//  // it will give me a NodeList (3)
+//  console.log(listItem[0].textContent);// firstElement
 
 
  // what is the diff b/w querySelector and getElementBy
@@ -177,6 +177,56 @@ console.log(l);// here we select all the three elements
 //it will not be pass the particular data 
 // while in case of querySelector It take the data only ont its referance 
 // if i cange something then it will not be reflected
+
+
+
+
+//---------------------------------------------
+// Creating and Removing the node elements 
+//----------------------------------------------
+// whenever we create an element it will not be added into the dom
+// it will just create and store into some variable and return 
+
+//--->
+const newDiv  = document.createElement('div');// it is just creating not adding into dom
+// to add it into the DOM 
+// body.append(newDiv);// we added the new div which is i created into body
+// now it will be the part of body /(new Node of body)
+
+
+// if we want to create a textNode then 
+const newText = document.createTextNode("hello My name is Mrinal")
+newDiv.appendChild(newText)
+// so here the text will be added into the newly created div
+ // so if we use append --> it will add at last 
+ //-----------------
+//  newDiv.prepend(newText)// it will add on top of the all the Node 
+
+ 
+
+//-----------------------
+// replaceWith
+//-----------------------
+// it is use to replace the text with the new text node
+firstDiv.replaceWith(newDiv)
+
+//-----------------------
+// remove 
+//-`----------------------- 
+firstDiv.remmove();
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
 </body>
 </html>
