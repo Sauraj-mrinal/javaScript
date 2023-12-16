@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let complete  = true;
+        
+        // let prom = new Promise(function(resolve, reject) {
+        //                    // WE CAN TAKE ANY NAME FOR ARGUNMENT here
+        //     if(complete){
+        //         // if my condition is true then resolve method will call 
+        //         resolve("I am sucessful . "); // we can pass the argunment here 
+        //         // we have not make this method , because when we call these method automatically inbulde method will call
+        //         //  then() --> it is a method that will call automatically 
+
+        //     }else{
+        //         // if my condition is false then reject method will call
+        //          reject(" I am fail ."); // --> inside reject method we can pass the argunment 
+        //          // we have not make this method , because when we call these method automatically inbulde method will call
+        //         //  catch() --> it is a method that will call automatically 
+
+        //     }
+        // });
+
+        // // to call promises
+        // console.log(prom);
+
+
+        //----------`---------------------------------------    -               -----------------------------------------------
+        //-    if i want to convert upper part in form of function then how it will happend 
+        //--------------------------------------------------------------------------------------------------------------------
+
+            function prom(complete) { 
+                // this function will return promise 
+                // so here we dont need to create any kind of variable 
+
+                    return  new Promise(function(resolve, reject) {
+                                // WE CAN TAKE ANY NAME FOR ARGUNMENT here it depends on the USER 
+                    if(complete){
+                        // if my condition is true then resolve method will call 
+                        resolve("I am sucessful . "); // we can pass the argunment here 
+                        // we have not make this method , because when we call these method automatically inbulde method will call
+                        //  then() --> it is a method that will call automatically 
+
+                    }else{
+                        // if my condition is false then reject method will call
+                        reject(" I am fail ."); // --> inside reject method we can pass the argunment 
+                        // we have not make this method , because when we call these method automatically inbulde method will call
+                        //  catch() --> it is a method that will call automatically 
+
+                    }
+                });
+
+            }
+             // to call prom method we should have to pass any value that value will be accept by complete -> nam ka argunment 
+
+        console.log(prom(true));
+
+
+
+  
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
