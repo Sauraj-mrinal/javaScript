@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <button onclick="getData()">Get Data</button>
+    
+
+    <script>
+        //plain vanila implementation with js 
+        // get method 
+        function getData(){
+            axios.get("https://jsonplaceholder.typicode.com/todos/1")
+            .then(function (response) {
+                console.log(response);
+            }).catch(function (error) {
+                    console.log(error);
+            });
+        }
+
+
+
+
+//----------------------------------------------------------------------------------------
+    //                          HTTP Methods -->
+//----------------------------------------------------------------------------------------
+    //   get--> get the data from AudioParam
+    //   POST-> create a new resource using API
+    //   PUT - > Update a existing resource or if not found , it will create one  
+    //   Delete - > Delete a resource
+    //   PATCH - > Update the existing resource 
+
+        // OPTIONS
+        // HEAD
+//------------------------------
+
+    //    GENERAL SYNTAX
+//-------------------------------
+
+    //    get- >  axios.get(url, {})
+
+    //    axios.post(url,data);
+
+    //    axios.put(url,data);
+       
+    //    axios.delete(url)
+
+   
+
+
+    </script>
+</body>
+</html>

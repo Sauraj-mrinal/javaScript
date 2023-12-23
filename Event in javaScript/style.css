@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    min-height: 60vh;
+
+    background: url("./bgimage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: azure;
+}
+.container{
+ max-width: 1200px;
+ margin: auto;
+ width: 90%;
+}
+.nav{
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-items{
+    width: 40%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.headline{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.btn{
+    display: inline-block;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+}
+.btn-headline{
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+.section-todo{
+    margin-top: 5rem;
+    text-align: center;
+}
+.form-todo{
+    
+    min-height: 5vh;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 1rem;
+
+}
+.form-todo input{
+    min-height: 100%;
+
+}
+.form-todo input[type="text"]{
+    width: 78%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.form-todo input[type="submit"]{
+width: 20%;
+background-color:rgb(46, 150, 154);
+}
+
+.section-signup{
+    margin-top: 5rem;
+    text-align: center;
+    background:rgb(219, 225, 230);
+    border-radius: 10px;
+    padding: 1rem;
+
+}
+.signupform{
+  max-width:  800px;
+  width: 95%;
+  text-align: left;
+  margin: auto;
+
+
+}
+.signupform label{
+   display: block;
+}
+.signupform input{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+
+}
+form-group{
+    margin-top: 1rem;
+
+}
+.signup-btn{
+    background:rgb(219, 225, 230);
+    color: #000;
+    padding: inline-black;
+    margin: auto;
+}
