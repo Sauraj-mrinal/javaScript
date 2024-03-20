@@ -1,5 +1,5 @@
-//primitve vs reference data type 
-// let num1 = 6;
+//  primitve vs reference data type 
+//  let num1 = 6;
 //  let num2 = num1;
 //  console.log("value is bum1 "+ num1);
 //  console.log("value is num2 is "+ num2);
@@ -8,8 +8,8 @@
 //  console.log("value os num1 is "+ num1);
 //  console.log("value os num2 is "+num2);
  
- //referance type 
- // we are taking  Array
+//  referance type 
+//  we are taking  Array
 //  let array1 = ["item1", " item2"];
 //  let array2 = array1;// array1 ka address array2 nam ka referance variable de diya hai
 //  console.log("array 1  "+array1);
@@ -21,7 +21,10 @@
 //  console.log("srrsy 2  "+array2);
 
 //----------------------*****************************---------------------------//
-//how to clone array
+//                          how to clone array
+//----------------------*****************************---------------------------//
+
+
 
 // how to concatenate two array
 // let array1 =[" item1", " item2"];
@@ -60,6 +63,8 @@
 // console.log(array2);//output -->   [ ' item1', ' item2', 'item2 ', ' item3' ]
 //------------------------------------------------------------------------------
 // way 2  
+//------------------------------------------------
+
 // let array1 =[" item1", " item2"];
 // let array2 =[].concat(array1,["item4" , "item5"]);
 // console.log(array1);// output --> [ ' item1', ' item2' ]

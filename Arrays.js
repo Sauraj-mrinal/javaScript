@@ -5,7 +5,7 @@
 // console.log(fruits);//[ 'apple', ' mango', ' banana' ]
 
 // let number  = [1,2,3,4,56,76];
-console.log(typeof number);// object 
+//console.log(typeof number);// object 
 // console.log(number );
 // //[ 1, 2, 3, 4, 56, 76 ]
 
@@ -530,7 +530,7 @@ undefined, 33.07,
 // if necessary, inserts new elements in their place, returning the deleted elements.
 // use ----------->
 
-const ar = ["item1" , "item2" , "item3"];
+//const ar = ["item1" , "item2" , "item3"];
 // now in this array i want to delete element of index 2
 // ar.splice(1,1);
 // console.log(ar);//[ 'item1', 'item3' ]
@@ -550,4 +550,17 @@ const ar = ["item1" , "item2" , "item3"];
 // ar.splice(1,2,"inserted item1", "inserted item2","inserted item3");
 // console.log(ar);//[ 'item1', 'inserted item1', 'inserted item2', 'inserted item3' ]
 
+
+//------------------------------------------------------------------------------------------------------------------------------------
+const arr =  ['apple', 'oranges' , ' ', 'mango', ' ' , 'lemon']
+
+function find_space(ele){
+  if(ele===' '){
+    ele.push('empty string')
+  }
+}
+
+const item1 = arr.map(find_space)
+
+console.log(item1);//[ '
 
