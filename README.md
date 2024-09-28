@@ -9,3 +9,5 @@
 - [JavaScript30](https://javascript30.com/): A free 30-day vanilla JavaScript coding challenge by Wes Bos, providing practical projects to improve JavaScript skills without libraries or frameworks.
 
 - [Node.js Documentation](https://nodejs.org/en/docs/): Official documentation for Node.js, a JavaScript runtime environment that enables server-side scripting and building scalable network applications.
+
+- https://javascript.info/  my fev :)
