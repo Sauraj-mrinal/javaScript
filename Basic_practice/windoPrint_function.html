@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p >
+        Lorem ipsum dolor sit amet consectetur<br>
+         adipisicing elit. Provident atque,<br>
+          labore fugiat possimus quos et deleniti porro beatae, ratione eum nesciunt consequuntur, 
+          <br>ipsum laborum molestiae inventore suscipit aspernatur quod rerum.
+    </p>
+
+    <button type="button" id = "mybtn">print</button>
+    <br>
+
+    <script>
+        function printData(){
+            window.print();
+        }
+        var b = document.getElementById("mybtn");
+        b.addEventListener("click", printData);
+    </script>
+</body>
+</html>

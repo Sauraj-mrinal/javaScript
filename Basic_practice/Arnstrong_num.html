@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <H3>Given a number x, determine whether the given number is Armstrong’s number or not.
+
+        A positive integer of n digits is called an Armstrong number of order n (order is the number of digits) if
+        
+        abcd... = pow(a,n) + pow(b,n) + pow(c,n) + pow(d,n) + .... </H3>
+    <script>
+       <!-- let n = (" please enter a number :") -->
+
+       //  first count the digit 
+       let count = 0;
+       let t =parseInt(n);
+       let temp = parseInt(n);
+       while(temp!=0){
+        temp = temp/10;
+        count = count + 1;
+        
+       }
+ // now calculate the logic
+       function Armstrongcal(num , pow){
+        let mul = 1;
+           while(pow>0){
+            mul = mul * num;
+            pow--;
+           }
+           return mul ; 
+       }
+       let rusNum=0;
+       while(t!=0){
+        let rem = t%10;
+        let r =  Armstrongcal(rem , count);
+        resNum = resNum+r;
+        t=t/10;
+
+       }
+
+       if(resNum == n){
+        console.log("Armstrong number ")
+       }else{
+
+       }
+    </script>
+</body>
+</html>

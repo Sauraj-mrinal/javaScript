@@ -1,0 +1,741 @@
+Here is a set of 50 beginner-level JavaScript practice problems, along with brief descriptions of what each one covers. These problems will help you build a foundation for web development using JavaScript.
+
+### 1-10: Basic Variables and Operations
+1. **Create a variable** and assign it a value. Log it to the console.
+2. **Add two numbers** and display the result using `alert()`.
+3. Write a function to **multiply two numbers** and return the result.
+4. **Check if a number is even or odd**. Write a function to determine this.
+5. **Swap two variables** using a temporary variable.
+6. Create a function that **converts Celsius to Fahrenheit**.
+7. Write a function to **find the largest number** in an array.
+8. Create a program to **calculate the area of a circle**.
+9. **Check if a string is empty** or not using an if-else statement.
+10. Write a function that **returns the length of a string**.
+
+### 11-20: Arrays and Loops
+11. **Create an array** of numbers and print each number using a `for` loop.
+12. Write a function to **find the sum of all elements** in an array.
+13. Create a program to **reverse an array**.
+14. **Find the smallest number** in an array.
+15. **Remove duplicates** from an array of numbers.
+16. Create a function to **sort an array** in ascending order.
+17. Write a loop that **counts from 1 to 100**, but prints "Fizz" for multiples of 3, "Buzz" for multiples of 5, and "FizzBuzz" for multiples of both.
+18. **Loop through an array** of names and print each one.
+19. Write a function that **removes the last element** from an array.
+20. **Add a new element** to the beginning of an array.
+
+### 21-30: Strings and Functions
+21. **Convert a string to uppercase** using a function.
+22. Create a function that **counts the number of vowels** in a string.
+23. **Check if a string contains a specific word**.
+24. Write a function that **reverses a string**.
+25. **Extract the first 5 characters** from a string.
+26. **Replace a word** in a string with another word.
+27. **Split a string into an array** of words.
+28. Create a function that **checks if a string is a palindrome**.
+29. **Concatenate two strings** and return the result.
+30. Write a function that **capitalizes the first letter** of each word in a sentence.
+
+### 31-40: Objects and DOM Manipulation
+31. **Create a simple object** with properties `name` and `age`. Print the name property.
+32. Write a function that **adds a new property** to an object.
+33. Create a function that **loops through an object** and logs each key and value.
+34. Write a function to **delete a property** from an object.
+35. **Access an HTML element** by its `id` and change its text content.
+36. **Create a button** that changes the background color of the page when clicked.
+37. Write a function to **add a new list item** to an unordered list (`<ul>`) in HTML.
+38. **Remove an element from the DOM** using JavaScript.
+39. Create an input field and a button. Write a function that **displays the input value** when the button is clicked.
+40. **Change the image source** (`src`) of an image tag using JavaScript.
+
+### 41-50: Events and User Interaction
+41. **Add an event listener** to a button that logs "Button clicked!" when clicked.
+42. Write a function that **prevents a form from submitting** when the submit button is clicked.
+43. **Create a dropdown menu** that displays an alert with the selected option.
+44. Write a function to **toggle the visibility** of an element when a button is clicked.
+45. **Display the current date and time** on a webpage.
+46. Create a button that, when clicked, **adds a new paragraph** to the page.
+47. Write a function that **changes the text color** of all paragraphs to red when clicked.
+48. **Change the content** of an `<h1>` tag when the mouse hovers over it.
+49. **Disable a button** after it has been clicked once.
+50. Create a form that requires a valid email address. **Show an error message** if the email is not valid.
+
+### How to Approach These Problems:
+1. Try solving each problem on your own before checking any solution.
+2. Break down each task into small steps.
+3. Test your code in a browser’s developer console or in an online code editor like CodePen or JSFiddle.
+
+This set of problems covers basic concepts in JavaScript like variables, arrays, loops, functions, objects, and DOM manipulation, helping you get a solid start in web development.
+
+Here’s a list of simple, practical tasks you can perform on a webpage using JavaScript, along with their solutions. These will help you understand how to manipulate HTML elements, handle events, and perform basic operations.
+
+Level -01
+
+### 1-10: Simple DOM Manipulation
+
+1. **Question**: Change the text of a heading (`<h1>` tag) when the page loads.
+   - **Answer**:
+     ```javascript
+     document.getElementById('myHeading').textContent = 'Welcome to My Website!';
+     ```
+
+2. **Question**: Change the background color of the entire webpage.
+   - **Answer**:
+     ```javascript
+     document.body.style.backgroundColor = 'lightblue';
+     ```
+
+3. **Question**: Add a new paragraph to the webpage.
+   - **Answer**:
+     ```javascript
+     let p = document.createElement('p');
+     p.textContent = 'This is a new paragraph.';
+     document.body.appendChild(p);
+     ```
+
+4. **Question**: Change the text color of all paragraphs to red.
+   - **Answer**:
+     ```javascript
+     let paragraphs = document.getElementsByTagName('p');
+     for (let i = 0; i < paragraphs.length; i++) {
+         paragraphs[i].style.color = 'red';
+     }
+     ```
+
+5. **Question**: Hide an image when a button is clicked.
+   - **Answer**:
+     ```javascript
+     document.getElementById('myButton').onclick = function() {
+         document.getElementById('myImage').style.display = 'none';
+     };
+     ```
+
+6. **Question**: Display an alert when the user clicks a button.
+   - **Answer**:
+     ```javascript
+     document.getElementById('alertButton').onclick = function() {
+         alert('Button clicked!');
+     };
+     ```
+
+7. **Question**: Add a list item (`<li>`) to an existing list when a button is clicked.
+   - **Answer**:
+     ```javascript
+     document.getElementById('addButton').onclick = function() {
+         let li = document.createElement('li');
+         li.textContent = 'New Item';
+         document.getElementById('myList').appendChild(li);
+     };
+     ```
+
+8. **Question**: Toggle the visibility of a paragraph when a button is clicked.
+   - **Answer**:
+     ```javascript
+     document.getElementById('toggleButton').onclick = function() {
+         let para = document.getElementById('myParagraph');
+         if (para.style.display === 'none') {
+             para.style.display = 'block';
+         } else {
+             para.style.display = 'none';
+         }
+     };
+     ```
+
+9. **Question**: Change the image source when a button is clicked.
+   - **Answer**:
+     ```javascript
+     document.getElementById('changeImage').onclick = function() {
+         document.getElementById('myImage').src = 'new-image.jpg';
+     };
+     ```
+
+10. **Question**: Disable a button after it has been clicked once.
+    - **Answer**:
+      ```javascript
+      document.getElementById('myButton').onclick = function() {
+          this.disabled = true;
+      };
+      ```
+
+### 11-20: User Interaction
+
+11. **Question**: Create a simple form that displays the user’s input in an alert box after submission.
+    - **Answer**:
+      ```javascript
+      document.getElementById('submitForm').onclick = function() {
+          let name = document.getElementById('nameInput').value;
+          alert('Hello, ' + name + '!');
+      };
+      ```
+
+12. **Question**: Change the font size of a paragraph when a button is clicked.
+    - **Answer**:
+      ```javascript
+      document.getElementById('fontButton').onclick = function() {
+          document.getElementById('myParagraph').style.fontSize = '24px';
+      };
+      ```
+
+13. **Question**: Make an element change color when the mouse hovers over it.
+    - **Answer**:
+      ```javascript
+      document.getElementById('hoverDiv').onmouseover = function() {
+          this.style.backgroundColor = 'yellow';
+      };
+      document.getElementById('hoverDiv').onmouseout = function() {
+          this.style.backgroundColor = '';
+      };
+      ```
+
+14. **Question**: Count the number of clicks on a button and display the count.
+    - **Answer**:
+      ```javascript
+      let count = 0;
+      document.getElementById('clickButton').onclick = function() {
+          count++;
+          document.getElementById('clickCount').textContent = 'Button clicked ' + count + ' times.';
+      };
+      ```
+
+15. **Question**: Display the current date and time in a `<div>` when a button is clicked.
+    - **Answer**:
+      ```javascript
+      document.getElementById('timeButton').onclick = function() {
+          let now = new Date();
+          document.getElementById('timeDiv').textContent = now;
+      };
+      ```
+
+16. **Question**: Change the text of a button after it is clicked.
+    - **Answer**:
+      ```javascript
+      document.getElementById('changeTextButton').onclick = function() {
+          this.textContent = 'Clicked!';
+      };
+      ```
+
+17. **Question**: Show an alert box when a user hovers over a specific text.
+    - **Answer**:
+      ```javascript
+      document.getElementById('hoverText').onmouseover = function() {
+          alert('You hovered over the text!');
+      };
+      ```
+
+18. **Question**: Change the border color of an input field when it is focused.
+    - **Answer**:
+      ```javascript
+      document.getElementById('myInput').onfocus = function() {
+          this.style.borderColor = 'blue';
+      };
+      document.getElementById('myInput').onblur = function() {
+          this.style.borderColor = '';
+      };
+      ```
+
+19. **Question**: Change the background color of the page when a checkbox is checked.
+    - **Answer**:
+      ```javascript
+      document.getElementById('myCheckbox').onchange = function() {
+          if (this.checked) {
+              document.body.style.backgroundColor = 'lightgreen';
+          } else {
+              document.body.style.backgroundColor = '';
+          }
+      };
+      ```
+
+20. **Question**: Create a button that hides a list when clicked, and shows it again when clicked a second time.
+    - **Answer**:
+      ```javascript
+      document.getElementById('toggleList').onclick = function() {
+          let list = document.getElementById('myList');
+          if (list.style.display === 'none') {
+              list.style.display = 'block';
+          } else {
+              list.style.display = 'none';
+          }
+      };
+      ```
+
+### 21-30: Input Handling and Forms
+
+21. **Question**: Display the value of a text input field in a paragraph when a button is clicked.
+    - **Answer**:
+      ```javascript
+      document.getElementById('displayButton').onclick = function() {
+          let inputValue = document.getElementById('myInput').value;
+          document.getElementById('displayParagraph').textContent = inputValue;
+      };
+      ```
+
+22. **Question**: Validate if an email input field contains a valid email address.
+    - **Answer**:
+      ```javascript
+      document.getElementById('validateButton').onclick = function() {
+          let email = document.getElementById('emailInput').value;
+          let isValid = email.includes('@') && email.includes('.');
+          alert(isValid ? 'Valid email' : 'Invalid email');
+      };
+      ```
+
+### These simple tasks will help you understand how to manipulate HTML elements, handle events, and create interactive webpages using JavaScript. Let me know if you’d like more!
+
+
+Level -2 
+Here are 30 medium-level JavaScript questions that involve more complex DOM manipulation, form validation, events, and user interaction. These will help you take your JavaScript skills to the next level.
+
+### 1-10: Intermediate DOM Manipulation and Events
+
+1. **Question**: Create a button that, when clicked, creates a new `<div>` element with a random background color.
+   - **Answer**:
+     ```javascript
+     document.getElementById('createDivButton').onclick = function() {
+         let newDiv = document.createElement('div');
+         newDiv.style.width = '100px';
+         newDiv.style.height = '100px';
+         newDiv.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16); // Random color
+         document.body.appendChild(newDiv);
+     };
+     ```
+
+2. **Question**: Create a simple to-do list where a user can add and remove tasks.
+   - **Answer**:
+     ```javascript
+     document.getElementById('addTaskButton').onclick = function() {
+         let task = document.getElementById('taskInput').value;
+         if (task) {
+             let li = document.createElement('li');
+             li.textContent = task;
+             li.onclick = function() {
+                 li.remove();
+             };
+             document.getElementById('taskList').appendChild(li);
+         }
+     };
+     ```
+
+3. **Question**: Create a button that, when clicked, alternates between showing and hiding a specific section.
+   - **Answer**:
+     ```javascript
+     document.getElementById('toggleSectionButton').onclick = function() {
+         let section = document.getElementById('mySection');
+         section.style.display = section.style.display === 'none' ? 'block' : 'none';
+     };
+     ```
+
+4. **Question**: Write a program that changes the color of the text based on the user’s selection from a dropdown menu.
+   - **Answer**:
+     ```javascript
+     document.getElementById('colorDropdown').onchange = function() {
+         let selectedColor = this.value;
+         document.getElementById('textToChange').style.color = selectedColor;
+     };
+     ```
+
+5. **Question**: Create a form that dynamically updates the content of a paragraph with the value of an input field as the user types.
+   - **Answer**:
+     ```javascript
+     document.getElementById('dynamicInput').oninput = function() {
+         document.getElementById('dynamicText').textContent = this.value;
+     };
+     ```
+
+6. **Question**: Create a button that, when clicked, moves an image to a random position on the page.
+   - **Answer**:
+     ```javascript
+     document.getElementById('moveImageButton').onclick = function() {
+         let image = document.getElementById('myImage');
+         image.style.position = 'absolute';
+         image.style.left = Math.floor(Math.random() * window.innerWidth) + 'px';
+         image.style.top = Math.floor(Math.random() * window.innerHeight) + 'px';
+     };
+     ```
+
+7. **Question**: Create a slideshow where a new image is displayed every 3 seconds.
+   - **Answer**:
+     ```javascript
+     let images = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
+     let currentIndex = 0;
+     setInterval(function() {
+         document.getElementById('slideshowImage').src = images[currentIndex];
+         currentIndex = (currentIndex + 1) % images.length;
+     }, 3000);
+     ```
+
+8. **Question**: Create a progress bar that fills up as a user scrolls down the page.
+   - **Answer**:
+     ```javascript
+     window.onscroll = function() {
+         let scrollPosition = document.documentElement.scrollTop;
+         let documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+         let scrolledPercentage = (scrollPosition / documentHeight) * 100;
+         document.getElementById('progressBar').style.width = scrolledPercentage + '%';
+     };
+     ```
+
+9. **Question**: Create a calculator that performs addition, subtraction, multiplication, and division.
+   - **Answer**:
+     ```javascript
+     function calculate(operation) {
+         let num1 = parseFloat(document.getElementById('num1').value);
+         let num2 = parseFloat(document.getElementById('num2').value);
+         let result;
+         switch(operation) {
+             case 'add': result = num1 + num2; break;
+             case 'subtract': result = num1 - num2; break;
+             case 'multiply': result = num1 * num2; break;
+             case 'divide': result = num1 / num2; break;
+         }
+         document.getElementById('result').textContent = result;
+     }
+     ```
+
+10. **Question**: Create a button that, when clicked, displays the current mouse coordinates.
+    - **Answer**:
+      ```javascript
+      document.getElementById('showCoordinates').onclick = function(event) {
+          alert('X: ' + event.clientX + ' Y: ' + event.clientY);
+      };
+      ```
+
+### 11-20: Working with Forms and User Input
+
+11. **Question**: Validate a form to check if the username is at least 5 characters long.
+    - **Answer**:
+      ```javascript
+      document.getElementById('submitForm').onclick = function() {
+          let username = document.getElementById('username').value;
+          if (username.length < 5) {
+              alert('Username must be at least 5 characters long');
+          }
+      };
+      ```
+
+12. **Question**: Create a form that only submits if both the password and confirm password fields match.
+    - **Answer**:
+      ```javascript
+      document.getElementById('submitForm').onsubmit = function(event) {
+          let password = document.getElementById('password').value;
+          let confirmPassword = document.getElementById('confirmPassword').value;
+          if (password !== confirmPassword) {
+              alert('Passwords do not match');
+              event.preventDefault();
+          }
+      };
+      ```
+
+13. **Question**: Show a character count for a textarea input as the user types.
+    - **Answer**:
+      ```javascript
+      document.getElementById('myTextarea').oninput = function() {
+          let charCount = this.value.length;
+          document.getElementById('charCount').textContent = 'Characters: ' + charCount;
+      };
+      ```
+
+14. **Question**: Automatically capitalize the first letter of each word in an input field.
+    - **Answer**:
+      ```javascript
+      document.getElementById('capitalizeInput').oninput = function() {
+          this.value = this.value.replace(/\b\w/g, function(l) { return l.toUpperCase(); });
+      };
+      ```
+
+15. **Question**: Create a real-time password strength checker.
+    - **Answer**:
+      ```javascript
+      document.getElementById('passwordInput').oninput = function() {
+          let password = this.value;
+          let strength = password.length > 8 ? 'Strong' : 'Weak';
+          document.getElementById('passwordStrength').textContent = strength;
+      };
+      ```
+
+16. **Question**: Disable the submit button of a form until all required fields are filled out.
+    - **Answer**:
+      ```javascript
+      document.querySelectorAll('input').forEach(function(input) {
+          input.oninput = function() {
+              let allFilled = Array.from(document.querySelectorAll('input')).every(function(input) {
+                  return input.value !== '';
+              });
+              document.getElementById('submitButton').disabled = !allFilled;
+          };
+      });
+      ```
+
+17. **Question**: Create a search bar that filters through a list of items as the user types.
+    - **Answer**:
+      ```javascript
+      document.getElementById('searchInput').oninput = function() {
+          let filter = this.value.toLowerCase();
+          let items = document.getElementById('myList').getElementsByTagName('li');
+          Array.from(items).forEach(function(item) {
+              item.style.display = item.textContent.toLowerCase().includes(filter) ? '' : 'none';
+          });
+      };
+      ```
+
+18. **Question**: Automatically format a phone number input to the format (xxx) xxx-xxxx.
+    - **Answer**:
+      ```javascript
+      document.getElementById('phoneInput').oninput = function() {
+          let cleaned = this.value.replace(/\D/g, '');
+          let formatted = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/);
+          if (formatted) {
+              this.value = '(' + formatted[1] + ') ' + formatted[2] + '-' + formatted[3];
+          }
+      };
+      ```
+
+19. **Question**: Create a button that clears all input fields in a form when clicked.
+    - **Answer**:
+      ```javascript
+      document.getElementById('clearFormButton').onclick = function() {
+          document.querySelectorAll('input').forEach(function(input) {
+              input.value = '';
+          });
+      };
+      ```
+
+20. **Question**: Add validation to ensure that an email address contains "@" and "." characters.
+    - **Answer**:
+      ```javascript
+      document.getElementById('submitEmailForm').onclick = function() {
+          let email = document.getElementById('emailInput').value;
+          if (!email.includes('@') || !email.includes('.')) {
+              alert('Please);
+
+
+level -3
+
+
+
+Here are 30 more medium-level JavaScript practice questions for you, focusing on DOM manipulation, events, form handling, and web interactions. These will help you improve your web development skills using JavaScript.
+
+### 1-10: More DOM Manipulation and Events
+
+1. **Question**: Create a button that changes the font style of a paragraph between normal and italic when clicked.
+   - **Answer**:
+     ```javascript
+     document.getElementById('fontButton').onclick = function() {
+         let para = document.getElementById('myParagraph');
+         para.style.fontStyle = para.style.fontStyle === 'italic' ? 'normal' : 'italic';
+     };
+     ```
+
+2. **Question**: Create an input field that changes the background color of the page as the user types a color name.
+   - **Answer**:
+     ```javascript
+     document.getElementById('colorInput').oninput = function() {
+         document.body.style.backgroundColor = this.value;
+     };
+     ```
+
+3. **Question**: Create a button that shuffles the order of items in an unordered list when clicked.
+   - **Answer**:
+     ```javascript
+     document.getElementById('shuffleButton').onclick = function() {
+         let list = document.getElementById('myList');
+         let items = Array.from(list.getElementsByTagName('li'));
+         items.sort(() => Math.random() - 0.5);
+         list.innerHTML = '';
+         items.forEach(item => list.appendChild(item));
+     };
+     ```
+
+4. **Question**: Create a button that displays an image and hides it after 5 seconds.
+   - **Answer**:
+     ```javascript
+     document.getElementById('showImageButton').onclick = function() {
+         let image = document.getElementById('myImage');
+         image.style.display = 'block';
+         setTimeout(function() {
+             image.style.display = 'none';
+         }, 5000);
+     };
+     ```
+
+5. **Question**: Create a button that increases the font size of a paragraph each time it is clicked.
+   - **Answer**:
+     ```javascript
+     document.getElementById('increaseFontButton').onclick = function() {
+         let para = document.getElementById('myParagraph');
+         let currentSize = parseFloat(window.getComputedStyle(para).fontSize);
+         para.style.fontSize = (currentSize + 2) + 'px';
+     };
+     ```
+
+6. **Question**: Create a button that reverses the text inside a paragraph when clicked.
+   - **Answer**:
+     ```javascript
+     document.getElementById('reverseButton').onclick = function() {
+         let para = document.getElementById('myParagraph');
+         para.textContent = para.textContent.split('').reverse().join('');
+     };
+     ```
+
+7. **Question**: Create a dropdown that changes the text alignment of a paragraph based on the user’s selection (left, center, or right).
+   - **Answer**:
+     ```javascript
+     document.getElementById('alignmentDropdown').onchange = function() {
+         document.getElementById('myParagraph').style.textAlign = this.value;
+     };
+     ```
+
+8. **Question**: Create a form that only enables the submit button if all checkboxes in a group are checked.
+   - **Answer**:
+     ```javascript
+     let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+     checkboxes.forEach(checkbox => {
+         checkbox.onchange = function() {
+             let allChecked = Array.from(checkboxes).every(cb => cb.checked);
+             document.getElementById('submitButton').disabled = !allChecked;
+         };
+     });
+     ```
+
+9. **Question**: Create a button that changes the text of all headings (`<h1>`, `<h2>`, etc.) to uppercase.
+   - **Answer**:
+     ```javascript
+     document.getElementById('uppercaseButton').onclick = function() {
+         let headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+         headings.forEach(heading => {
+             heading.textContent = heading.textContent.toUpperCase();
+         });
+     };
+     ```
+
+10. **Question**: Create a button that changes the text of a specific paragraph based on the user’s input.
+    - **Answer**:
+      ```javascript
+      document.getElementById('changeTextButton').onclick = function() {
+          let newText = document.getElementById('textInput').value;
+          document.getElementById('myParagraph').textContent = newText;
+      };
+      ```
+
+### 11-20: Forms and User Input
+
+11. **Question**: Create a password strength indicator that shows "Weak", "Medium", or "Strong" based on the length of the password.
+    - **Answer**:
+      ```javascript
+      document.getElementById('passwordInput').oninput = function() {
+          let password = this.value;
+          let strength = password.length > 10 ? 'Strong' : password.length > 5 ? 'Medium' : 'Weak';
+          document.getElementById('passwordStrength').textContent = strength;
+      };
+      ```
+
+12. **Question**: Create a button that displays an alert if the user has not filled out all required fields in a form.
+    - **Answer**:
+      ```javascript
+      document.getElementById('submitButton').onclick = function() {
+          let requiredFields = document.querySelectorAll('input[required]');
+          let allFilled = Array.from(requiredFields).every(input => input.value !== '');
+          if (!allFilled) {
+              alert('Please fill out all required fields.');
+          }
+      };
+      ```
+
+13. **Question**: Create a form that displays a confirmation message before submitting.
+    - **Answer**:
+      ```javascript
+      document.getElementById('myForm').onsubmit = function(event) {
+          let confirmSubmit = confirm('Are you sure you want to submit the form?');
+          if (!confirmSubmit) {
+              event.preventDefault();
+          }
+      };
+      ```
+
+14. **Question**: Create a live word counter that displays the number of words in a textarea as the user types.
+    - **Answer**:
+      ```javascript
+      document.getElementById('textArea').oninput = function() {
+          let wordCount = this.value.split(/\s+/).filter(word => word.length > 0).length;
+          document.getElementById('wordCount').textContent = 'Words: ' + wordCount;
+      };
+      ```
+
+15. **Question**: Create a form that shows an error message if an email input does not include a "@" symbol.
+    - **Answer**:
+      ```javascript
+      document.getElementById('emailInput').oninput = function() {
+          let email = this.value;
+          let errorMessage = document.getElementById('error');
+          if (!email.includes('@')) {
+              errorMessage.textContent = 'Invalid email format';
+          } else {
+              errorMessage.textContent = '';
+          }
+      };
+      ```
+
+16. **Question**: Create a form that calculates and displays the total of numbers entered into multiple input fields.
+    - **Answer**:
+      ```javascript
+      let inputs = document.querySelectorAll('.numberInput');
+      document.getElementById('calculateButton').onclick = function() {
+          let total = 0;
+          inputs.forEach(input => {
+              total += parseFloat(input.value) || 0;
+          });
+          document.getElementById('total').textContent = 'Total: ' + total;
+      };
+      ```
+
+17. **Question**: Create a form that automatically formats the entered text to title case (first letter capitalized) as the user types.
+    - **Answer**:
+      ```javascript
+      document.getElementById('titleInput').oninput = function() {
+          this.value = this.value.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+      };
+      ```
+
+18. **Question**: Create a form that limits the user to typing a maximum of 100 characters in a textarea.
+    - **Answer**:
+      ```javascript
+      document.getElementById('myTextarea').oninput = function() {
+          if (this.value.length > 100) {
+              this.value = this.value.slice(0, 100);
+          }
+      };
+      ```
+
+19. **Question**: Create a password toggle button that shows and hides the password in an input field.
+    - **Answer**:
+      ```javascript
+      document.getElementById('togglePassword').onclick = function() {
+          let passwordField = document.getElementById('passwordInput');
+          if (passwordField.type === 'password') {
+              passwordField.type = 'text';
+              this.textContent = 'Hide Password';
+          } else {
+              passwordField.type = 'password';
+              this.textContent = 'Show Password';
+          }
+      };
+      ```
+
+20. **Question**: Create a form that shows an error message if the user tries to submit with a blank input field.
+    - **Answer**:
+      ```javascript
+      document.getElementById('submitForm').onsubmit = function(event) {
+          let inputs = document.querySelectorAll('input');
+          inputs.forEach(input => {
+              if (input.value === '') {
+                  event.preventDefault();
+                  alert('Please fill out all fields');
+              }
+          });
+      };
+      ```
+
+### 21-30: More Complex Interactions
+
+21. **Question**: Create a dropdown menu that changes the background color of a specific `<div>` based on the selected option.
+      ```
+

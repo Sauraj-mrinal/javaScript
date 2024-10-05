@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> making calculator by using  switch case </h3>
+
+    <script>
+         var num1  = prompt("please enter first number ");
+         var num2 = prompt("please enter second number");
+         
+         var opt = prompt("please select among  +,-,*,/");
+
+         switch(opt){
+            case "+":
+                var sum = parseInt(num1) + parseInt(num2);
+                document.write("sum is ="+sum);
+                console.log(sum)
+                break;
+            case "-": 
+                var sub = parseInt(num1) - parseInt(num2);
+                document.write("sub is ="+sub);
+                console.log(sub)
+                break;
+            case  "*":
+                var mul = parseInt(num1) * parseInt(num2);
+                document.write("mul is ="+mul);
+                console.log(mul)
+            break;
+            case "/":
+                var div = parseInt(num1) / parseInt(num2);
+                document.write("div is ="+div);
+                console.log(div)
+                break;
+
+            default:
+            document.write("invalid operator");
+         }
+    </script>
+</body>
+</html>

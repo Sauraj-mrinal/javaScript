@@ -564,3 +564,7 @@ const item1 = arr.map(find_space)
 
 console.log(item1);//[ '
 
+
+
+
+UnderStand_LocalStorageE:\DEV\New folder\javaScript\javaScript\Arrays.js
