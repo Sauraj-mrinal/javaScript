@@ -1,0 +1,24 @@
+<!-- // 39. Create an input field and a button. Write a function that **displays the input value** when the button is clicked. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+      <input id="myinput" type="text" placeholder="enter somting">
+     <button id="mybtn">submit</button>
+
+     <script>
+        let inputval = document.getElementById("myinput").innerHTML;
+        let btn = document.getElementById("mybtn");
+        function Disp(){
+            console.log(inputval+11);
+        }
+    
+        btn.addEventListener("click" ,Disp)
+
+     </script>
+ </body>
+ </html>

@@ -1,0 +1,41 @@
+<!-- 37. Write a function to **add a new list item** to an unordered list (`<ul>`) in HTML. -->!
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <ul id="myList">
+            <li>list item1 </li>
+            
+          </ul>
+
+          <script>
+         
+           const t =  document.getElementById("myList")
+
+          function AddItemInUl(itemName){
+            // first i create a empty list item <li></li>
+            const newList = document.createElement("li")
+            <!-- then we create a item which i want ti put into the list -->
+            const newItem = document.createTextNode(itemName)
+             //  then i add item into my empty list  -->
+
+                f = newList.appendChild(newItem);
+
+               // then my list is now with item like -> <li> item </li>
+
+               // then i add this list item into unorderd list ehich have id ="myList"
+            t.appendChild(newList).appendChild(newItem)
+            console.log(t)
+          }
+           AddItemInUl("item 11");
+           AddItemInUl("ram");
+           AddItemInUl("Shyam")
+
+          </script>
+    </body>
+    </html>

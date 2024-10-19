@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 35. **Access an HTML element** by its `id` and change its text content. -->
+    <!-- 36. **Create a button** that changes the background color of the page when clicked. -->
+    <!-- 37. Write a function to **add a new list item** to an unordered list (`<ul>`) in HTML -->
+    <h3 id="myh1"> hii i ma heading </h3>
+    <button id="mybtn" type="button">click to change bg</button>
+
+    <ul id="myList">
+        <li>list item1 </li>
+        
+      </ul>
+
+    <script>
+       // 35
+       // <!-- var h = document.getElementById("myh1");
+       // <!-- console.log(h.textContent);
+       // <!-- h.textContent='ram aam khata hai'; --> -->
+       // <!-- console.log(h.textContent) --> -->
+    //36
+      // var h = document.getElementById("mybtn")
+      // h.addEventListener('click',()=>{
+      //     document.bgColor='red'
+      // })
+
+       //37
+
+       var l = document.getElementById('myList');
+       console.log(l)
+       // 1st create 
+       function addNewList(itemName){
+        const newList = document.createElement("li")
+
+        // create content of list
+        const newItem = document.createTextNode(itemName)
+        l.appendChild(newList).appendChild(newItem);
+        console.log(l)
+       }
+       addNewList("ram");
+       addNewList("ram");
+       addNewList("ram");
+       addNewList("ram");
+       addNewList("ram");
+       addNewList("ram");
+       addNewList("ram");
+
+
+      
+    </script>
+</body>
+</html>
