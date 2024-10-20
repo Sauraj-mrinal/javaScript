@@ -9,15 +9,21 @@
  <body>
       <input id="myinput" type="text" placeholder="enter somting">
      <button id="mybtn">submit</button>
+      <ul>
+         <li id="myli"></li>
+      </ul>
+     
 
      <script>
-        let inputval = document.getElementById("myinput").innerHTML;
-        let btn = document.getElementById("mybtn");
+        
+       
         function Disp(){
-            console.log(inputval+11);
+         let input = document.getElementById("myinput").value;
+         document.getElementById("myli").innerHTML = input;
+            
         }
     
-        btn.addEventListener("click" ,Disp)
+        document.getElementById("mybtn").addEventListener("click" ,Disp)
 
      </script>
  </body>

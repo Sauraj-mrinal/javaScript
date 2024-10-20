@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Visibility Example</title>
+    <style>
+        #toggleText {
+            display: none; /* Initially hidden */
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Toggle Element Visibility</h1>
+    <button id="toggleButton">Show/Hide Text</button>
+    <div id="toggleText">This is the text that will be toggled!</div>
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            const textElement = document.getElementById('toggleText');
+            // Toggle the display property between 'none' and 'block'
+            if (textElement.style.display === 'none' || textElement.style.display === '') {
+                textElement.style.display = 'block'; // Show the element
+            } else {
+                textElement.style.display = 'none'; // Hide the element
+            }
+        });
+    </script>
+
+</body>
+</html>

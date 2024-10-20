@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu Example</title>
+</head>
+<body>
+
+
+     <p> 43. **Create a dropdown menu** that displays an alert with the selected option.
+        
+        </p>
+    <h1>Select Your Favorite Fruit</h1>
+    <select id="fruitDropdown">
+        <option value="">--Please choose an option--</option>
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="orange">Orange</option>
+        <option value="grape">Grape</option>
+        <option value="mango">Mango</option>
+    </select>
+           
+    <script>
+        <!-- if your code it not working then you should apply this code  -->
+        document.addEventListener('DOMContentLoaded', function() {
+           
+            document.getElementById('fruitDropdown').addEventListener('change', function() {
+                const selectedFruit = this.value;
+                if (selectedFruit) {
+                    alert(`You selected: ${selectedFruit}`);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

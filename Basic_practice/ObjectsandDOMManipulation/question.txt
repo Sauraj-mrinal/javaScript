@@ -1,0 +1,12 @@
+
+  # 31-40: Objects and DOM Manipulation
+31.   Create a simple object   with properties `name` and `age`. Print the name property.
+32. Write a function that   adds a new property   to an object.
+33. Create a function that   loops through an object   and logs each key and value.
+34. Write a function to   delete a property   from an object.
+35.   Access an HTML element   by its `id` and change its text content.
+36.   Create a button   that changes the background color of the page when clicked.
+37. Write a function to   add a new list item   to an unordered list (`<ul>`) in HTML.
+38.   Remove an element from the DOM   using JavaScript.
+39. Create an input field and a button. Write a function that   displays the input value   when the button is clicked.
+40.   Change the image source   (`src`) of an image tag using JavaScript.

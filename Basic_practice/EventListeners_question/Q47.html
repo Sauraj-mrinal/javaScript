@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Q . Write a function that **changes the text color** of all paragraphs to red when clicked.</h1>
+
+    <p id="myp">Life is the quality that distinguishes a living being from a dead body. It can also be defined as an organismic state that includes the ability to: Grow, React to stimuli, Reproduce, and Metabolize. 
+        However, life can be defined in different ways depending on the context. For example, life can be defined as the period from birth to death, or as the condition that only occurs in living organisms. 
+        Some other characteristics of life include: Homeostasis, Organization, and Adaptation. 
+        Life can be found all over the Earth in air, water, and soil. Some microorganisms can thrive in harsh environments, such as hot springs and deep-sea hydrothermal vents. 
+        Some philosophical definitions of life include the idea of self-organizing systems. However, viruses can make defining life difficult because they only replicate in host cells.</p>
+
+ <script>
+    let para = document.getElementById("myp");
+    console.log(para.textContent)
+    para.addEventListener("click",()=>{
+        para.style.color = "red";
+    },false)
+ </script>
+</body>
+</html>

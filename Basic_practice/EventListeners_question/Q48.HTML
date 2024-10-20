@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>48. **Change the content** of an tag when the mouse hovers over it.</h3>
+    <p id="hoverTitle">Life is the quality that distinguishes a living being from a dead body. It can also be defined as an organismic state that includes the ability to: Grow, React to stimuli, Reproduce, and Metabolize. 
+        However, life can be defined in different ways depending on the context. For example, life can be defined as the period from birth to death, or as the condition that only occurs in living organisms. 
+        Some other characteristics of life include: Homeostasis, Organization, and Adaptation. 
+        Life can be found all over the Earth in air, water, and soil. Some microorganisms can thrive in harsh environments, such as hot springs and deep-sea hydrothermal vents. 
+        Some philosophical definitions of life include the idea of self-organizing systems. However, viruses can make defining life difficult because they only replicate in host cells.</p>
+
+
+
+    <script>
+        const pa = document.getElementById('hoverTitle');
+
+        const hoverTitle = document.getElementById('hoverTitle');
+
+        
+        hoverTitle.addEventListener('mouseover', function() {
+            hoverTitle.textContent = "You're hovering over me!";
+            hoverTitle.style.color = 'blue';
+        });
+
+        // Revert content when the mouse leaves the h3
+        hoverTitle.addEventListener('mouseout', function() {
+            hoverTitle.textContent = `Life is the quality that distinguishes a living being from a dead body. It can also be defined as an organismic state that includes the ability to: Grow, React to stimuli, Reproduce, and Metabolize. 
+        However, life can be defined in different ways depending on the context. For example, life can be defined as the period from birth to death, or as the condition that only occurs in living organisms. 
+        Some other characteristics of life include: Homeostasis, Organization, and Adaptation. 
+        Life can be found all over the Earth in air, water, and soil. Some microorganisms can thrive in harsh environments, such as hot springs and deep-sea hydrothermal vents. 
+        Some philosophical definitions of life include the idea of -organizing systems. However, viruses can make defining life difficult because they only replicate in host cells.`
+
+            hoverTitle.style.color = '#333';
+        });
+    </script>
+</body>
+</html>
+
+button:disabled {
+    background-color: #ccc;  /* Light gray background */
+    cursor: not-allowed;     /* Show "not allowed" cursor */
+    opacity: 0.7;            /* Slightly transparent */
+}

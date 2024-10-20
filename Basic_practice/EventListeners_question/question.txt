@@ -1,0 +1,13 @@
+
+
+  # 41-50: Events and User Interaction
+41.   Add an event listener   to a button that logs "Button clicked!" when clicked.
+42. Write a function that   prevents a form from submitting   when the submit button is clicked.
+43.   Create a dropdown menu   that displays an alert with the selected option.
+44. Write a function to   toggle the visibility   of an element when a button is clicked.
+45.   Display the current date and time   on a webpage.
+46. Create a button that, when clicked,   adds a new paragraph   to the page.
+47. Write a function that   changes the text color   of all paragraphs to red when clicked.
+48.   Change the content   of an `<h1>` tag when the mouse hovers over it.
+49.   Disable a button   after it has been clicked once.
+50. Create a form that requires a valid email address.   Show an error message   if the email is not valid.

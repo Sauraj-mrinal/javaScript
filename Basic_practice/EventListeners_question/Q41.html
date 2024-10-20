@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        41. **Add an event listener** to a button that logs "Button clicked!" when clicked.
+    </h1>
+    <button id="btn">click</button>
+    <script>
+        function clickbtn(){
+            console.log('button clicked !')
+        }
+        btn = document.getElementById('btn');
+        btn.addEventListener('click',clickbtn)
+    </script>
+</body>
+</html>

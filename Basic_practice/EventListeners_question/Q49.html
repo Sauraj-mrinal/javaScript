@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporary Disable Button</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: #736f6f;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="tempDisableButton">Click to Disable for 5 Seconds</button>
+
+    <script>
+        const button = document.getElementById('tempDisableButton');
+
+        button.addEventListener('click', () => {
+            button.disabled = true;  // Disable the button
+            button.textContent = "Disabled for 5 Seconds";
+
+            setTimeout(() => {
+                button.disabled = false;  // Re-enable the button after 5 seconds
+                button.textContent = "Click to Disable for 5 Seconds";
+            }, 5000);  // 5 seconds = 5000ms
+        });
+    </script>
+
+</body>
+</html>

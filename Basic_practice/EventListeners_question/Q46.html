@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>46. Create a button that, when clicked, **adds a new paragraph** to the page.</p>
+
+    <div id="mydiv">
+        
+        <input id="inputId" placeholder="add paragraph to add in html">
+        <button id="btn">click to add new paragraph</button>
+    </div>
+    <script>
+        
+         
+        function addele(){
+            const inputValue = document.getElementById("inputId").value;
+            let newparagraph  = document.createElement("p");
+            newparagraph.textContent = inputValue;
+            let divele= document.getElementById("mydiv").appendChild(newparagraph);
+        }
+
+        document.getElementById("btn").addEventListener('click', addele)
+       
+       
+    </script>
+</body>
+</html>
